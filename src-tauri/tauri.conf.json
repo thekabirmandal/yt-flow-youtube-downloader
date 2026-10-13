@@ -1,0 +1,39 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "YT FLOW",
+  "version": "0.1.0",
+  "identifier": "com.kabirmandal.ytflow",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "YT FLOW",
+        "width": 860,
+        "height": 620,
+        "minWidth": 720,
+        "minHeight": 500
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "shortDescription": "Fast YouTube Video & Audio Downloader",
+    "longDescription": "YT FLOW is a high-performance desktop application for downloading YouTube videos in up to 4K/8K resolution and extracting MP3/M4A audio with Smart Mode.",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ]
+  }
+}
